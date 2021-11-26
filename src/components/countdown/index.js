@@ -10,6 +10,10 @@ const CountDown = () => {
         seconds:0
     });
 
+    const dobleDigit = (n) => {
+        return (n < 10 ? "0" : "") + n;
+      };
+
     const calculateChristmasCountdown=()=>{
 
         //Get today's date.
@@ -58,10 +62,10 @@ const CountDown = () => {
         }
         
         settimer({
-            days,
-            hours,
-            minutes,
-            seconds
+            days: dobleDigit(days),
+            hours: dobleDigit(hours),
+            minutes:dobleDigit(minutes),
+            seconds:dobleDigit(seconds)
         })
     }
 

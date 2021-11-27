@@ -1,5 +1,4 @@
 .App {
-  background-color: #061024; /* #282c34  000000 #226cff*/
   background-image: url("./img/snow3.gif");
 
   width: 100%;
@@ -9,4 +8,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  animation: 4s infinite bgcolorchange;
+}
+
+@keyframes bgcolorchange {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #0037ff;
+  }
+  50% {
+    background-color: #00ff43;
+  }
+  75% {
+    background-color: #ff8100;
+  }
+  100% {
+    background-color: #ff0000;
+  }
 }

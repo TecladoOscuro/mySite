@@ -70,6 +70,7 @@ const CountDown = () => {
     }
 
     useEffect(()=>{
+        calculateChristmasCountdown()
         let myInterval = setTimeout(calculateChristmasCountdown, 1000)
         return ()=> {
             clearInterval(myInterval);
